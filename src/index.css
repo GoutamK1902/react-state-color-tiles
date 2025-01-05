@@ -8,15 +8,32 @@ body {
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .pad-container {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(3, 100px);
   gap: 10px;
+}
+
+.on-off-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+
+}
+
+.on-off-container>button {
+  margin-top: 10px;
+  height: 100px;
+  width: 155px;
+  border: 3px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.1;
 }
 
 button {
@@ -24,7 +41,7 @@ button {
   width: 100px;
   border: 3px solid white;
   border-radius: 5px;
-  cursor: pointer;   
+  cursor: pointer;
   opacity: 0.1;
 }
 
